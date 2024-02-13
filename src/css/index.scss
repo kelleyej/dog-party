@@ -5,12 +5,13 @@ body {
   height: 100vh;
   width: 100%;
   margin: 0; 
+  font-family: $font; 
 }
 
 nav {
   background-color: $secondary-accent-color;
   display: flex; 
-  justify-content: space-between; 
+  justify-content: space-between;  
 }
 
 .dog-icon {
@@ -29,19 +30,27 @@ footer {
 article {
   display: flex; 
   background-color: $background-color;
-}
-
-article, 
-footer, 
-.first-section {
   text-align: center; 
 }
 
 button {
   background-color: $background-color;
+  border: solid $main-accent-color 3px;
+  color: $main-accent-color;
 }
 
 nav, 
 footer {
   color: $background-color
 }
+
+.first-section, 
+footer {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+
+
+
