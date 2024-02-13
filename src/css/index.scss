@@ -4,11 +4,13 @@ body {
   background: url('../../dist/images/park.jpg') center/cover;
   height: 100vh;
   width: 100%;
+  margin: 0; 
 }
 
 nav {
-  // Example of using a variable:
   background-color: $secondary-accent-color;
+  display: flex; 
+  justify-content: space-between; 
 }
 
 .dog-icon {
@@ -17,9 +19,29 @@ nav {
 
 img {
   border-radius: 50%; 
-  border: solid #3F8CA8 2px; 
+  border: solid $main-accent-color 2px; 
 }
 
 footer {
-  background-color: #3F8CA8;
+  background-color: $main-accent-color;
+}
+
+article {
+  display: flex; 
+  background-color: $background-color;
+}
+
+article, 
+footer, 
+.first-section {
+  text-align: center; 
+}
+
+button {
+  background-color: $background-color;
+}
+
+nav, 
+footer {
+  color: $background-color
 }
