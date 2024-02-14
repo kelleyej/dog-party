@@ -8,14 +8,28 @@ body {
   font-family: $font; 
 }
 
+h1 {
+  font-weight: 500; 
+  margin-bottom: 0; 
+}
+ 
+h3 {
+  font-weight: normal; 
+}
+
 nav {
   background-color: $secondary-accent-color;
   display: flex; 
   justify-content: space-between;  
+  height: 44px; 
+  align-items: center; 
 }
 
 .dog-icon {
-  width: 50px;
+  width: 28px;
+  height: 28px;
+  margin-left: 24px; 
+  border: none; 
 }
 
 img {
@@ -23,20 +37,29 @@ img {
   border: solid $main-accent-color 2px; 
 }
 
+.section-dog {
+  height: 169px;
+  width: 169px; 
+}
+
 footer {
   background-color: $main-accent-color;
+  height: 170px; 
 }
 
 article {
   display: flex; 
   background-color: $background-color;
   text-align: center; 
+  height: 464px;
 }
 
 button {
   background-color: $background-color;
   border: solid $main-accent-color 3px;
   color: $main-accent-color;
+  width: 101px; 
+  height: 27px; 
 }
 
 nav, 
@@ -51,6 +74,25 @@ footer {
   align-items: center; 
 }
 
+.links {
+  margin-right: 24px; 
+  width: 148px; 
+}
+
+.first-section {
+  height: 415px
+}
+
+.main-dog {
+  width: 247px; 
+  height: 247px; 
+  margin-top: 29px; 
+  margin-bottom: 15px; 
+}
 
 
 
+.icon {
+  height: 38px; 
+  width: 38px; 
+}
