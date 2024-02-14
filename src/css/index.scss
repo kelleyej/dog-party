@@ -15,6 +15,7 @@ h1 {
  
 h3 {
   font-weight: normal; 
+  margin-top: 0; 
 }
 
 nav {
@@ -32,14 +33,11 @@ nav {
   border: none; 
 }
 
-img {
-  border-radius: 50%; 
-  border: solid $main-accent-color 2px; 
-}
-
 .section-dog {
   height: 169px;
   width: 169px; 
+  border-radius: 50%; 
+  border: solid $main-accent-color 2px; 
 }
 
 footer {
@@ -52,14 +50,23 @@ article {
   background-color: $background-color;
   text-align: center; 
   height: 464px;
+  align-items: center; 
+}
+
+#main-button {
+  width: 124px; 
+  height: 27px; 
+}
+
+#section-button {
+  width: 102px; 
+  height: 27px; 
 }
 
 button {
   background-color: $background-color;
   border: solid $main-accent-color 3px;
   color: $main-accent-color;
-  width: 101px; 
-  height: 27px; 
 }
 
 nav, 
@@ -84,15 +91,23 @@ footer {
 }
 
 .main-dog {
-  width: 247px; 
-  height: 247px; 
+  width: 248px; 
+  height: 248px; 
   margin-top: 29px; 
   margin-bottom: 15px; 
+  border-radius: 50%; 
+  border: solid $main-accent-color 4px; 
 }
-
-
 
 .icon {
   height: 38px; 
   width: 38px; 
+}
+
+.second-section {
+  margin-left: 35px; 
+}
+
+.fourth-section {
+  margin-right: 35px; 
 }
