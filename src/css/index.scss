@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 body {
   background: url('../../dist/images/park.jpg') center/cover;
@@ -20,10 +21,9 @@ h3 {
 
 nav {
   background-color: $secondary-accent-color;
-  display: flex; 
   justify-content: space-between;  
   height: 44px; 
-  align-items: center; 
+  @include centered();
 }
 
 .dog-icon {
@@ -43,14 +43,14 @@ nav {
 footer {
   background-color: $main-accent-color;
   height: 170px; 
+  font-weight: 600;
 }
 
-article {
-  display: flex; 
+article { 
   background-color: $background-color;
   text-align: center; 
   height: 464px;
-  align-items: center; 
+  @include centered(); 
 }
 
 #main-button {
@@ -75,10 +75,9 @@ footer {
 }
 
 .first-section, 
-footer {
-  display: flex; 
+footer { 
   flex-direction: column; 
-  align-items: center; 
+  @include centered(); 
 }
 
 .links {
@@ -87,6 +86,7 @@ footer {
   display: flex;
   justify-content: space-between; 
   margin-right: 24px; 
+  font-weight: 600; 
 }
 
 .first-section {
@@ -105,10 +105,7 @@ footer {
 .icon {
   height: 38px; 
   width: 38px; 
-  margin-top: 15px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-left: 20px; 
+  margin: 15px 20px 20px 20px;
 }
 
 .second-section {
