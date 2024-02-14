@@ -82,8 +82,11 @@ footer {
 }
 
 .links {
+  width: 165px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between; 
   margin-right: 24px; 
-  width: 148px; 
 }
 
 .first-section {
