@@ -1,16 +1,142 @@
 @import 'variables';
+@import 'mixins';
 
 body {
   background: url('../../dist/images/park.jpg') center/cover;
   height: 100vh;
   width: 100%;
+  margin: 0; 
+  font-family: $font;    
 }
 
 nav {
-  // Example of using a variable:
   background-color: $secondary-accent-color;
+  justify-content: space-between;  
+  height: 45px; 
+  @include centered();
 }
 
 .dog-icon {
-  width: 50px;
+  width: 32px;
+  height: 32px;
+  margin-left: 25px; 
+  border: none; 
+}
+
+.links {
+  width: 160px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between; 
+  margin-right: 25px; 
+  font-weight: 500; 
+  font-size: 1em;
+}
+
+.first-section {
+  height: 455px;
+}
+
+h1 {
+  font-weight: 450; 
+  margin-bottom: 0; 
+  margin-top: 40px;
+  font-size: 1.8em;
+}
+
+.main-dog {
+  width: 260px; 
+  height: 260px; 
+  margin-top: 25px; 
+  margin-bottom: 15px; 
+  border-radius: 50%; 
+  border: solid $main-accent-color 4px; 
+}
+
+#main-button {
+  width: 130px; 
+  height: 30px; 
+}
+ 
+h3 {
+  font-weight: normal; 
+  margin-top: 0; 
+}
+
+.secondary-dog {
+  height: 180px;
+  width: 180px; 
+  border-radius: 50%; 
+  border: solid $main-accent-color 2px; 
+}
+
+article { 
+  background-color: $background-color;
+  text-align: center; 
+  height: 464px;
+  @include centered(); 
+}
+
+.second-section {
+  margin-left: 35px; 
+}
+
+.third-section {
+  margin-right: 20px; 
+  margin-left: 20px; 
+}
+
+.fourth-section {
+  margin-right: 35px; 
+}
+
+.section-button {
+  width: 110px; 
+  height: 30px; 
+}
+
+#small-button {
+  width: 95px; 
+}
+
+button {
+  background-color: $background-color;
+  border: solid $main-accent-color 3px;
+  color: $main-accent-color;
+  cursor: pointer; 
+  font-size: 1em;
+  font-family: $font; 
+}
+
+footer {
+  background-color: $main-accent-color;
+  height: 170px; 
+  font-weight: 600;
+}
+
+nav,
+footer {
+  color: $background-color
+}
+
+.first-section, 
+footer { 
+  flex-direction: column; 
+  @include centered(); 
+}
+
+li {
+  cursor: pointer; 
+}
+
+.icon {
+  height: 38px; 
+  width: 38px; 
+  margin: 15px 22px 20px 22px;
+  cursor: pointer; 
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer; 
 }
